@@ -1,0 +1,55 @@
+{
+  "name": "cz-ai-mcp",
+  "version": "1.0.0",
+  "description": "CZ AI Model Context Protocol Server for Autonomous Sovereign Financial Freedom, High-Throughput Decentralized Liquidity, Proof-of-Reserves & User Asset Protection (SAFU) Protocol",
+  "tools": [
+    {
+      "name": "audit_proof_of_reserves_solvency",
+      "description": "Cryptographically verify exchange and liquidity vault solvency via zero-knowledge Merkle trees and on-chain collateralization ratios",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "vault_address": {
+            "type": "string"
+          },
+          "merkle_root": {
+            "type": "string"
+          },
+          "total_liabilities_wei": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "vault_address",
+          "merkle_root"
+        ]
+      }
+    },
+    {
+      "name": "disburse_safu_emergency_grant",
+      "description": "Trigger automated micro-escrow releases from SAFU reserve pools for protocol security incident compensations and blockchain education scholarships",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
